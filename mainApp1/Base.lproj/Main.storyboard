@@ -19,6 +19,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sgs-8n-UYu" id="Xfr-wp-yxu">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="QHQ-DZ-9Sa" kind="show" id="T63-Fh-YAC"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -26,7 +29,15 @@
                             <outlet property="delegate" destination="vXZ-lx-hvc" id="LBP-AM-IX1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="GeO-xq-Hjh"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="GeO-xq-Hjh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="nEa-An-RfV">
+                            <connections>
+                                <segue destination="1Dl-lq-ciI" kind="show" id="gfp-P0-zQz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -44,6 +55,11 @@
                     <view key="view" contentMode="scaleToFill" id="PcO-35-47Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="84c-mN-v4Y">
+                                <rect key="frame" x="0.0" y="51" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -63,13 +79,18 @@
                     <view key="view" contentMode="scaleToFill" id="Oky-zA-p0f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="M4H-Qb-ibs">
+                                <rect key="frame" x="0.0" y="-44" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0V-a1-otU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1197.5" y="-453.5"/>
+            <point key="canvasLocation" x="1241.5" y="-453.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ksc-i3-gFb">
@@ -91,4 +112,7 @@
             <point key="canvasLocation" x="284" y="-453"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="wallpaper" width="744" height="1392"/>
+    </resources>
 </document>
